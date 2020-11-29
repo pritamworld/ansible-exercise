@@ -6,9 +6,14 @@
     tasks:
         - name: Execute Date Command
           command: date
+        - name: Execute java version check
+          command: java -version
+        - name: Execute ansible version check
+          command: ansible --version
         - name: Execute docker version check
           command: docker version
         - name: Test local action
           command: echo "Hello World"
         - name: Create new folder
+          #Change your machine path
           command: mkdir /Users/moxdroid/Documents/testAnsible
