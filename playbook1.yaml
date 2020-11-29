@@ -1,0 +1,14 @@
+# Sample Ansible Playbook1.yml
+- 
+    hosts: localhost #all
+    connection: local # remove if you are using localhost without hosts file
+    name: Play 1
+    tasks:
+        - name: Execute Date Command
+          command: date
+        - name: Execute docker version check
+          command: docker version
+        - name: Test local action
+          command: echo "Hello World"
+        - name: Create new folder
+          command: mkdir /Users/moxdroid/Documents/testAnsible
