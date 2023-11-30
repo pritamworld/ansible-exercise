@@ -11,7 +11,7 @@
    - name: Install Packages
       apt: name={{item}}
       with_items:
-         - openjdk-8-jdk
+         - openjdk-17-jdk
          - docker.io
          - postgresql postgresql-contrib
 
